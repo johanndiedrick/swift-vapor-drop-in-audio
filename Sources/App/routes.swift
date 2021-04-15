@@ -3,7 +3,7 @@ import Fluent
 
 func routes(_ app: Application) throws {
     
-    var auth = Auth(applicationId: "APP_ID")
+    var auth = Auth(applicationId: "3769cc52-cae4-4053-b8db-cc38c8c4eb9b")
     
     app.post("auth") { req -> EventLoopFuture<UserAuth.Response> in
         let authBody = try req.content.decode(AuthBody.self)
